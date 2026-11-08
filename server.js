@@ -2,11 +2,11 @@ const express = require("express");
 const app = express();
 
 app.get('/',(req, res)=>{
-    res.send("hello world")
+    res.sendFile(__dirname + "/index.html");
 })
 
 app.listen(3000, () => {
-    console.log("I'm listening")
+    console.log("I'm listening");
 })
 
 app.get("/api/dreams", (req,res) => {

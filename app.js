@@ -22,9 +22,8 @@ let dreams = [
         "title": "World Peace",
         "description": "A world where all nations live in harmony and conflicts are resolved peacefully.",
         "type": "Long-term",
-        "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/peace.jpg",
+        "img_name": "/public/images/peace.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "1"
     },
     {
@@ -33,7 +32,6 @@ let dreams = [
         "type": "Long-term",
         "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/food.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "2"
     },
     {
@@ -42,7 +40,6 @@ let dreams = [
         "type": "Long-term",
         "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/education.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "3"
     },
     {
@@ -51,7 +48,6 @@ let dreams = [
         "type": "Long-term",
         "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/health.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "4"
     },
     {
@@ -60,7 +56,6 @@ let dreams = [
         "type": "Long-term",
         "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/star.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "5"
     },
     {
@@ -69,7 +64,6 @@ let dreams = [
         "type": "Short-term",
         "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/lottery.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "6"
     },
     {
@@ -78,7 +72,6 @@ let dreams = [
         "type": "Long-term",
         "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/astronaut.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "7"
     },
     {
@@ -87,7 +80,6 @@ let dreams = [
         "type": "Long-term",
         "img_name": "https://breadwards88.github.io/csce242/projects/part7/images/travel.jpg",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "8"
     },
     {
@@ -96,7 +88,6 @@ let dreams = [
         "type": "Destination",
         "img_name": "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d637700.156236257!2d86.55243663706656!3d27.999129368736213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMt%20Everest!5e0!3m2!1sen!2sus!4v1791766992413!5m2!1sen!2sus",
         "yes_count": "0",
-        "no_count": "0",
         "_id": "9"
     }
 ]

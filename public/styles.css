@@ -139,6 +139,9 @@ h4 {
     font-size: 18px;
     color: var(--text-color);
 }
+a {
+    text-decoration: none;
+}
 
 /* Responsive Design */
 @media (min-width: 1200px) {

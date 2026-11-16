@@ -38,4 +38,6 @@ a {
     background-color: var(--text-color);
     border-radius: 20%;
     border: none;
+    margin: 10px;
+    margin-bottom: 20px;
 }

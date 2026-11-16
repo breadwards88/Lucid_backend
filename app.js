@@ -129,7 +129,7 @@ const validateDream = (dream) => {
     const schema = Joi.object({
         _id:Joi.allow(""),
         title:Joi.string().min(4).required(),
-        description:Joi.description().min(0),
+        description:Joi.string().min(0),
         type:Joi.string().valid("Short-term", "Long-term", "Destination", "Time Sensitive").required(),
     });
     return schema.validate(dream);

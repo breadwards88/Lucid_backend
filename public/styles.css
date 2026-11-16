@@ -46,7 +46,7 @@ header {
 }
 
 .slot3 {
-    background: var(--orange);
+    background-image:linear-gradient(to right, var(--purple),var(--green),var(--blue));
     border: solid var(--text-color) 4px;
     border-radius: 15%;
     box-shadow: 5px 5px var(--text-color);

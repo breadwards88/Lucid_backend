@@ -97,7 +97,7 @@ app.get("/api/dreams", (req,res)=>{
 });
 
 app.post("/api/dreams", upload.single("img_name"), ()=> {
-    const result = validateHouse(req.body);
+    const result = validateDream(req.body);
 
     if(result.error){
         console.log("Error in validation");

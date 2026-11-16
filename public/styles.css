@@ -12,7 +12,11 @@
     --ptext-color: gray;
     --text-color: black;
 }
-
+#section3{
+    background: var(--blue);
+    align-content: center;
+    text-align: center;
+}
 .slot3 {
     background-image: linear-gradient(to right, var(--purple), var(--green), var(--blue));
     border: solid var(--text-color) 4px;

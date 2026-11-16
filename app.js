@@ -110,7 +110,6 @@ app.post("/api/dreams", upload.single("img_name"), ()=> {
         title:req.body.title,
         description:req.body.description,
         type:req.body.type,
-
     };
 
     console.log("Passed Validation");
@@ -122,8 +121,8 @@ const validateDream = (dream) => {
         title:Joi.string().min(4).required(),
         description:Joi.description().min(0),
         type:Joi.description().min(0),
-
     });
+    return schema.validate(dream);
 }
 
 //listen to incoming requests

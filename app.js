@@ -96,7 +96,7 @@ app.get("/api/dreams", (req,res)=>{
     res.send(dreams);
 });
 
-app.post("/api/dreams", upload.single("img_name"), ()=> {
+app.post("/api/dreams", upload.single("img_name"), (req, res)=> {
     const result = validateDream(req.body);
 
     if(result.error){
@@ -114,8 +114,17 @@ app.post("/api/dreams", upload.single("img_name"), ()=> {
         yes_count: "0",
     };
 
+    if (req.file){
+        dream.main_image = req.file.filename;
+    }
+
+    dreams.push(dream);
+
     console.log("Passed Validation");
+    res.status(200).send(dream);
 });
+
+const Joi = require("joi");
 
 const validateDream = (dream) => {
     const schema = Joi.object({

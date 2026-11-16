@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
 const app = express();
+const Joi = require("joi");
 app.use(express.static("public"));
 app.use(express.json());
 app.use(cors());
@@ -123,8 +124,6 @@ app.post("/api/dreams", upload.single("img_name"), (req, res)=> {
     res.status(200).send(dream);
     console.log("Passed Validation");
 });
-
-const Joi = require("joi");
 
 const validateDream = (dream) => {
     const schema = Joi.object({

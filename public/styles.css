@@ -25,6 +25,11 @@
     margin: 20px;
 }
 
+/* Typography */
+a {
+    text-decoration: none;
+}
+
 /* Buttons */
 .waking {
     font-size: 30px;
@@ -32,9 +37,4 @@
     color: var(--white);
     border-radius: 20%;
     border: none;
-}
-
-/* Typography */
-a {
-    text-decoration: none;
 }

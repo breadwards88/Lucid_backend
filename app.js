@@ -120,8 +120,8 @@ app.post("/api/dreams", upload.single("img_name"), (req, res)=> {
 
     dreams.push(dream);
 
-    console.log("Passed Validation");
     res.status(200).send(dream);
+    console.log("Passed Validation");
 });
 
 const Joi = require("joi");

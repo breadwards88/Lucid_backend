@@ -16,6 +16,7 @@
     background: var(--blue);
     align-content: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 .slot3 {
     background-image: linear-gradient(to right, var(--purple), var(--green), var(--blue));
@@ -28,13 +29,13 @@
 /* Typography */
 a {
     text-decoration: none;
+    color: var(--white);
 }
 
 /* Buttons */
 .waking {
     font-size: 30px;
     background-color: var(--text-color);
-    color: var(--white);
     border-radius: 20%;
     border: none;
 }

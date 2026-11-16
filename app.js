@@ -96,7 +96,7 @@ app.get("/api/dreams", (req,res)=>{
     res.send(dreams);
 });
 
-app.post("/api/houses", upload.single(img), ()=> {
+app.post("/api/dreams", upload.single(img), ()=> {
     const result = validateHouse(req.body);
 
     if(result.error){

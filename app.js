@@ -96,6 +96,36 @@ app.get("/api/dreams", (req,res)=>{
     res.send(dreams);
 });
 
+app.post("/api/houses", upload.single(img), ()=> {
+    const result = validateHouse(req.body);
+
+    if(result.error){
+        console.log("Error in validation");
+        res.status(400).send(result.error.details[0].message);
+        return;
+    }
+
+    const dream = {
+        _id:dreams.length+1,
+        title:req.body.title,
+        description:req.body.description,
+        type:req.body.type,
+
+    };
+
+    console.log("Passed Validation");
+});
+
+const validateDream = (dream) => {
+    const schema = Joi.object({
+        _id:Joi.allow(""),
+        title:Joi.string().min(4).required(),
+        description:Joi.description().min(0),
+        type:Joi.description().min(0),
+
+    });
+}
+
 //listen to incoming requests
 app.listen (3001, ()=>{
     console.log("Server is up and running");

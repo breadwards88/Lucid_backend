@@ -1,1 +1,1 @@
-console.log("I love puppies.");
+require("dotenv).config")
